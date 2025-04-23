@@ -194,7 +194,7 @@ sendChatButton.addEventListener('click', () => {
         // Placeholder for sending message to backend and receiving response
         console.log('Sending chat message to backend (not implemented in this basic version):', message);
         setTimeout(() => {
-            appendMessage('chatbot', 'This is a placeholder chat response.');
+            appendMessage('chatbot', 'Responding Soon!, Currently I\'m in learning stage....');
         }, 500);
     }
 });
