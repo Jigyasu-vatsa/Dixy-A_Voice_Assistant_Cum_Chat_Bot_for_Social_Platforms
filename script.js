@@ -94,6 +94,9 @@ function processVoiceCommand(command) {
     if (command.includes('go to') && command.includes('about')) {
         scrollToSection('about');
         speak('Navigating to the about section.');
+    } else if (command.includes('go to') && command.includes('home')) {
+        scrollToSection('home');
+        speak('Navigating to the home page.');
     } else if (command.includes('go to') && command.includes('projects')) {
         scrollToSection('projects');
         speak('Navigating to the projects section.');
@@ -106,6 +109,12 @@ function processVoiceCommand(command) {
     } else if (command.includes('go to') && command.includes('experience')) {
         scrollToSection('experience');
         speak('Navigating to the experience section.');
+    }else if (command.includes('go to') && command.includes("jigyasu's portfolio")) {
+        speak("Redirecting to the Jigyasu's Portfolio.");
+		window.location.assign("https://jigyasu-vatsa.github.io/jigs-portfolio/")
+    }else if (command.includes('go to') && command.includes("jigyasu portfolio")) {
+        speak("Redirecting to the Jigyasu's Portfolio.");
+		window.location.href=("https://jigyasu-vatsa.github.io/jigs-portfolio/")
     }
 
     // --- Project-related commands ---
@@ -132,8 +141,16 @@ function processVoiceCommand(command) {
         speak('You can find my contact information in the contact section below. Feel free to send me a message!');
     }
 
+
+	// --- Quering Jigs for Chat Bot-related commands ---
+    else if (command.includes('Chat Bot') || command.includes('Chat') || command.includes('bot') || command.includes('Jigs A chatbot')) {
+        scrollToSection('contact');
+        speak('Jigs A Chatbot will starts responding Soon!, As currently Jigs - A Voice Assistant Cum Chat Bot is in learning stage and works hard to grab featuristic responses');
+    }
+
+
     // --- General commands ---
-    else if (command.includes('hello') || command.includes('hi') || command.includes('greetings')) {
+    else if (command.includes('hello') || command.includes('hi') || command.includes('greetings') || command.includes('Jigs')) {
         speak(`Hello! How can I help you explore my portfolio today?`);
     } else if (command.includes('open') && command.includes('github')) {
         speak('Opening my GitHub profile.');
