@@ -46,7 +46,7 @@ const fallbackProjectsData = [
     {
         title: 'Study on database support to regularise developing scenarios within systematic norms',
         description: 'Conducted a study on how database support can help regularise the development of scenarios within systematic norms.',
-        associatedWith: 'NABENDU TECHNO SOLUTIONS PVT. LTD',
+        associatedWith: 'NABENG TECHNO SOLUTIONS PVT. LTD',
         link: '#'
     }
 ];
